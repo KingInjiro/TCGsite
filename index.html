@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ООО Т-груп</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+        body {
+            font-family: Arial, Verdana, sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+    <!-- Контейнер: фіксована ширина, по центру, біле тло -->
+    <div class="max-w-[950px] mx-auto bg-white min-h-screen shadow-lg flex flex-col">
+        
+        <!-- Шапка (Header) -->
+        <header class="bg-gradient-to-r from-[#FFFFCC] to-[#FFCC00] flex justify-between items-center px-6 py-4">
+            <div>
+                <img src="/images/tcg_log3.gif" alt="Т-груп Логотип" width="125" height="125" class="block">
+            </div>
+            <div class="text-right text-sm leading-relaxed font-semibold">
+                <p>тел: +38 (044) 4005850</p>
+                <p>E-mail: <a href="mailto:info@tcg.com.ua" class="text-blue-700 hover:underline">Контактная информация</a></p>
+            </div>
+        </header>
+
+        <!-- Горизонтальне меню -->
+        <nav class="bg-[#FFFFCC] flex justify-center py-2 border-y border-yellow-500">
+            <div class="flex gap-2 flex-wrap justify-center px-4">
+                <a href="#"><img src="/derived/home_cmp_-1-010_gbtn.GIF" alt="Home" width="100" height="20" class="block"></a>
+                <a href="#"><img src="/derived/feedback.htm_cmp_-1-010_gbtn.GIF" alt="Feedback" width="100" height="20" class="block"></a>
+                <a href="#"><img src="/derived/toc.htm_cmp_-1-010_gbtn.GIF" alt="TOC" width="100" height="20" class="block"></a>
+                <a href="#"><img src="/derived/Download.htm_cmp_-1-010_gbtn.GIF" alt="Download" width="100" height="20" class="block"></a>
+                <a href="#"><img src="/derived/search.htm_cmp_-1-010_gbtn.GIF" alt="Search" width="100" height="20" class="block"></a>
+                <a href="#"><img src="/derived/ssilki.htm_cmp_-1-010_gbtn.GIF" alt="Links" width="100" height="20" class="block"></a>
+            </div>
+        </nav>
+
+        <!-- Макет (3 колонки) -->
+        <div class="flex flex-1 flex-col md:flex-row p-4 gap-6">
+            
+            <!-- Ліва колонка -->
+            <aside class="w-full md:w-[140px] shrink-0 flex flex-col gap-2 items-center md:items-start">
+                <a href="#"><img src="/derived/news.htm_cmp_-1-010_vbtn.GIF" alt="News" width="140" height="30" class="block"></a>
+                <a href="#"><img src="/derived/contacts.htm_cmp_-1-010_vbtn.GIF" alt="Contacts" width="140" height="30" class="block"></a>
+                <a href="#"><img src="/derived/products.htm_cmp_-1-010_vbtn.GIF" alt="Products" width="140" height="30" class="block"></a>
+                <a href="#"><img src="/derived/services.htm_cmp_-1-010_vbtn.GIF" alt="Services" width="140" height="30" class="block"></a>
+                <a href="#"><img src="/derived/ListPage_www_tcg_com_ua.htm_cmp_-1-010_vbtn.GIF" alt="List Page" width="140" height="30" class="block"></a>
+            </aside>
+
+            <!-- Центральна колонка (гумова) -->
+            <main class="flex-1 text-sm leading-relaxed text-justify">
+                <h1 class="text-xl font-bold mb-4 text-[#FFCC00] drop-shadow-sm">Добро пожаловать в Т-груп</h1>
+                <p class="mb-4">ООО Т-груп основана в 2000 году. Мы специализируемся на внедрении современных информационных технологий и создании надежной ИТ-инфраструктуры для бизнеса.</p>
+                <hr class="border-t border-gray-300 my-4">
+                <p class="mb-4">Наши основные направления — это поставка оборудования, лицензирование программного обеспечения и комплексное обслуживание корпоративных клиентов.</p>
+                <hr class="border-t border-gray-300 my-4">
+                <p>Надежность и профессионализм — главные принципы нашей работы.</p>
+            </main>
+
+            <!-- Права колонка -->
+            <aside class="w-full md:w-[240px] shrink-0">
+                <div class="bg-[#FFFFCC] border border-yellow-400 p-4 rounded-sm shadow-sm">
+                    <h2 class="font-bold text-center text-sm mb-3 text-gray-800">Новости Украины и IT</h2>
+                    
+                    <div class="mb-4 text-center">
+                        <a href="https://meta.ua" target="_blank" class="text-blue-800 font-semibold hover:underline text-sm">META.ua - Поиск по Украине</a>
+                    </div>
+                    
+                    <hr class="border-yellow-400 my-3">
+                    
+                    <form action="https://www.google.com/search" method="get" target="_blank" class="flex flex-col gap-2">
+                        <label for="q" class="text-xs font-bold text-gray-700">Поиск Google:</label>
+                        <div class="flex">
+                            <input type="text" id="q" name="q" class="border border-gray-400 px-2 py-1 w-full text-sm focus:outline-none focus:border-yellow-500">
+                            <button type="submit" class="bg-gray-200 border border-gray-400 border-l-0 px-3 text-sm hover:bg-gray-300 transition-colors">Go</button>
+                        </div>
+                    </form>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- Admin Redirect Script -->
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>

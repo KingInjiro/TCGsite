@@ -1,0 +1,6 @@
+{
+  "name": "Т-груп 2005",
+  "description": "Visual clone of the 2005 tcg.com.ua website, built with modern HTML5 and Tailwind CSS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
